@@ -1,0 +1,774 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Velour & Oak | Marco Richard Spirits × Sullivan Cove French</title>
+  <meta name="description" content="Campus Placements 2026: Slot Zero Executive Induction & Quirky Pink Level Incubator at Velour & Oak." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg-dark: #090a0d;
+      --bg-card: #12141a;
+      --bg-card-hover: #181c24;
+      --gold-primary: #d4af37;
+      --gold-light: #f7e7a9;
+      --pink-accent: #f43f5e;
+      --pink-glow: rgba(244, 63, 94, 0.25);
+      --text-main: #f3f4f6;
+      --text-muted: #9ca3af;
+      --border-color: rgba(212, 175, 55, 0.2);
+      --border-subtle: rgba(255, 255, 255, 0.08);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 20px;
+      --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, .brand-font {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 0.04em;
+    }
+
+    /* Navigation */
+    header.site-header {
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      background: rgba(9, 10, 13, 0.92);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+
+    .nav-container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .brand-group {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+    }
+
+    .brand-name {
+      font-size: 1.35rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: 0.12em;
+    }
+
+    .brand-sub {
+      font-size: 0.68rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.75rem;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      font-size: 0.88rem;
+      font-weight: 500;
+      transition: var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-light);
+    }
+
+    .btn-apply-nav {
+      background: linear-gradient(135deg, var(--gold-primary), #b38728);
+      color: #000 !important;
+      font-weight: 700 !important;
+      padding: 0.6rem 1.3rem;
+      border-radius: 999px;
+      letter-spacing: 0.05em;
+      transition: var(--transition);
+      box-shadow: 0 4px 14px rgba(212, 175, 55, 0.25);
+    }
+
+    .btn-apply-nav:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.45);
+    }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      padding: 5rem 1.5rem 6rem;
+      max-width: 1240px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.4rem 1rem;
+      background: rgba(244, 63, 94, 0.12);
+      border: 1px solid rgba(244, 63, 94, 0.35);
+      color: #fda4af;
+      border-radius: 999px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+      line-height: 1.15;
+      margin-bottom: 1.5rem;
+      color: #fff;
+    }
+
+    .hero h1 span {
+      background: linear-gradient(135deg, var(--gold-light), var(--gold-primary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      color: var(--text-muted);
+      margin-bottom: 2.2rem;
+      max-width: 600px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3.5rem;
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--gold-primary), #b38728);
+      color: #000;
+      font-weight: 700;
+      padding: 0.9rem 1.8rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.35);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid var(--border-color);
+      color: var(--gold-light);
+      font-weight: 600;
+      padding: 0.9rem 1.8rem;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(212, 175, 55, 0.1);
+    }
+
+    /* Metric Counters */
+    .metrics-bar {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--border-subtle);
+    }
+
+    .metric-card {
+      background: rgba(18, 20, 26, 0.7);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+
+    .metric-value {
+      font-size: 1.65rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+    }
+
+    .metric-label {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: 0.25rem;
+    }
+
+    .hero-visual {
+      position: relative;
+    }
+
+    .hero-card {
+      position: relative;
+      background: linear-gradient(180deg, #161821 0%, #0d0f14 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+    }
+
+    .hero-card-tag {
+      font-size: 0.75rem;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.75rem;
+    }
+
+    .hero-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #fff;
+    }
+
+    .hero-features {
+      list-style: none;
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .hero-features li {
+      font-size: 0.9rem;
+      color: #d1d5db;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+    }
+
+    .hero-features span {
+      color: var(--gold-primary);
+    }
+
+    /* Common Sections */
+    section {
+      padding: 5.5rem 1.5rem;
+      max-width: 1240px;
+      margin: 0 auto;
+    }
+
+    .section-head {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 3.5rem;
+    }
+
+    .section-eyebrow {
+      color: var(--pink-accent);
+      font-size: 0.82rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.16em;
+      margin-bottom: 0.75rem;
+      display: block;
+    }
+
+    .section-title {
+      font-size: clamp(2rem, 3.2vw, 2.75rem);
+      color: #fff;
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    .section-subtitle {
+      color: var(--text-muted);
+      font-size: 1rem;
+    }
+
+    /* Grids */
+    .grid-3 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 2rem;
+    }
+
+    .grid-4 {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      transition: var(--transition);
+      position: relative;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      border-color: var(--border-color);
+      background: var(--bg-card-hover);
+    }
+
+    .card-label {
+      font-size: 0.75rem;
+      color: var(--gold-primary);
+      text-transform: uppercase;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      margin-bottom: 0.5rem;
+    }
+
+    .card h3 {
+      font-size: 1.35rem;
+      color: #fff;
+      margin-bottom: 0.5rem;
+    }
+
+    .card .role-title {
+      font-size: 0.85rem;
+      color: var(--pink-accent);
+      margin-bottom: 1rem;
+      font-weight: 600;
+    }
+
+    .card p {
+      color: var(--text-muted);
+      font-size: 0.92rem;
+    }
+
+    .quote-box {
+      margin-top: 1.25rem;
+      padding-top: 1rem;
+      border-top: 1px dashed rgba(255, 255, 255, 0.1);
+      font-style: italic;
+      color: #e2e8f0;
+      font-size: 0.86rem;
+    }
+
+    /* Incubator */
+    .phase-num {
+      width: 44px;
+      height: 44px;
+      background: rgba(244, 63, 94, 0.15);
+      color: var(--pink-accent);
+      border: 1px solid var(--pink-accent);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    /* CTC Segment */
+    .ctc-container {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(0, 0, 0, 0.4));
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 3rem 2rem;
+      display: grid;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2.5rem;
+      align-items: center;
+      margin-top: 2.5rem;
+    }
+
+    .ctc-highlight {
+      border-right: 1px solid var(--border-subtle);
+      padding-right: 2rem;
+    }
+
+    .ctc-amount {
+      font-size: 3.2rem;
+      font-weight: 900;
+      color: var(--gold-light);
+      font-family: 'Cinzel', serif;
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .benefits-split {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .benefit-item {
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .benefit-icon {
+      font-size: 1.5rem;
+      line-height: 1;
+    }
+
+    /* Form Section */
+    .recruitment-section {
+      background: #0d0f14;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 3.5rem 2.5rem;
+      position: relative;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.7);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1.5rem;
+    }
+
+    .form-full {
+      grid-column: span 2;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .form-group label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #e5e7eb;
+      letter-spacing: 0.04em;
+    }
+
+    .form-group label span {
+      color: var(--pink-accent);
+    }
+
+    .form-control {
+      background: #151821;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: var(--radius-sm);
+      padding: 0.85rem 1rem;
+      color: #fff;
+      font-family: inherit;
+      font-size: 0.95rem;
+      transition: var(--transition);
+      outline: none;
+    }
+
+    .form-control:focus {
+      border-color: var(--gold-primary);
+      box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.2);
+      background: #181c26;
+    }
+
+    select.form-control option {
+      background: #151821;
+      color: #fff;
+    }
+
+    .form-disclaimer {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-top: 1rem;
+    }
+
+    .form-submit-btn {
+      width: 100%;
+      background: linear-gradient(135deg, var(--gold-primary), #b38728);
+      color: #000;
+      font-size: 1.05rem;
+      font-weight: 700;
+      padding: 1.1rem;
+      border: none;
+      border-radius: var(--radius-sm);
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      transition: var(--transition);
+      text-transform: uppercase;
+      margin-top: 1rem;
+    }
+
+    .form-submit-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 175, 55, 0.4);
+    }
+
+    /* Channels */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .contact-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-subtle);
+      border-radius: var(--radius-md);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-decoration: none;
+      transition: var(--transition);
+      color: inherit;
+    }
+
+    .contact-card:hover {
+      border-color: var(--gold-primary);
+      background: var(--bg-card-hover);
+      transform: translateY(-3px);
+    }
+
+    .contact-type {
+      font-size: 0.75rem;
+      color: var(--gold-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .contact-title {
+      font-size: 1.15rem;
+      color: #fff;
+      margin: 0.4rem 0 0.2rem;
+      font-weight: 600;
+    }
+
+    .contact-detail {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      word-break: break-all;
+    }
+
+    .contact-action {
+      margin-top: 1.25rem;
+      color: var(--gold-light);
+      font-weight: 600;
+      font-size: 0.85rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-subtle);
+      padding: 4rem 1.5rem 2.5rem;
+      background: #060709;
+      text-align: center;
+    }
+
+    .footer-brand {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--gold-light);
+      letter-spacing: 0.15em;
+      margin-bottom: 1rem;
+      font-family: 'Cinzel', serif;
+    }
+
+    .footer-text {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-copy {
+      font-size: 0.75rem;
+      color: #6b7280;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      padding-top: 1.5rem;
+    }
+
+    @media (max-width: 960px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding-top: 3rem;
+      }
+      .metrics-bar {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .ctc-container {
+        grid-template-columns: 1fr;
+      }
+      .ctc-highlight {
+        border-right: none;
+        border-bottom: 1px solid var(--border-subtle);
+        padding-right: 0;
+        padding-bottom: 1.5rem;
+      }
+      .benefits-split {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .nav-links {
+        display: none;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-full {
+        grid-column: span 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand-group">
+        <span class="brand-name">VELOUR &amp; OAK</span>
+        <span class="brand-sub">Marco Richard × Sullivan Cove French</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#revolution">Market Shift</a>
+        <a href="#facility">Tiruchirapally Plant</a>
+        <a href="#incubator">Quirky Pink Level</a>
+        <a href="#benefits">HR &amp; Relocation</a>
+        <a href="#ctc">₹11.3 LPA CTC</a>
+        <a href="#connect">Connect</a>
+        <a href="#apply" class="btn-apply-nav">Apply Slot Zero</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <header class="hero">
+    <div>
+      <div class="badge-pill">
+        <span>●</span> Campus Placements 2026 • Executive B-School Induction
+      </div>
+      <h1>Where French Craft Meets <br><span>Modern Indian Swagger.</span></h1>
+      <p>
+        India's luxury alco-bev market is witnessing a seismic transformation driven by bold women leaders. Marco Richard joins forces with <strong>Sullivan Cove French</strong> to empower MBA graduates from Day 1 to design brand cultures, own P&amp;L, and engineer how the nation drinks.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#apply" class="btn-primary">Nominate / Apply For Slot Zero →</a>
+        <a href="#incubator" class="btn-secondary">Explore Quirky Pink Level</a>
+      </div>
+
+      <div class="metrics-bar">
+        <div class="metric-card">
+          <div class="metric-value">₹11.3 LPA</div>
+          <div class="metric-label">Slot Zero CTC</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">+12%</div>
+          <div class="metric-label">Spirits CAGR</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">60 Days</div>
+          <div class="metric-label">Transit Stay</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-value">Day 1</div>
+          <div class="metric-label">P&amp;L Ownership</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hero-card">
+        <div class="hero-card-tag">Tiruchirapally Automated Facility</div>
+        <h3>The Craft &amp; Disruption Canvas</h3>
+        <p style="color: var(--text-muted); font-size: 0.95rem;">
+          Bridging French distillation heritage with modern Indian botanical innovations. Designed specifically for ambitious graduates who refuse ordinary rotational programs.
+        </p>
+
+        <ul class="hero-features">
+          <li><span>▸</span> <strong>Global Maturation:</strong> Sullivan Cove oak cask aging protocols.</li>
+          <li><span>▸</span> <strong>Indigenous Botanicals:</strong> High-precision Southern extraction lines.</li>
+          <li><span>▸</span> <strong>Autonomous Leadership:</strong> Direct category authority with zero bureaucracy.</li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- Women in Alco-Bev -->
+  <section id="revolution">
+    <div class="section-head">
+      <span class="section-eyebrow">Industry Disruption</span>
+      <h2 class="section-title">Women Leading India's Alco-Bev Revolution</h2>
+      <p class="section-subtitle">
+        The Indian alco-bev sector is surging toward <strong>US $57.3 Billion by 2029</strong>. Women aren't merely driving luxury consumption—they are founding distilleries, designing master distillations, and steering market expansions.
+      </p>
+    </div>
+
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-label">Luxury Rum Vanguard • Goa / Mumbai</div>
+        <h3>Kasturi Banerjee</h3>
+        <div class="role-title">Founder, Stilldistilling Spirits (Maka Zai)</div>
+        <p>
+          Transitioned seamlessly from a 16-year corporate banking career to artisan distilling. She shattered barriers by creating Maka Zai, proving that women are defining premium barrel aging, bespoke flavor notes, and sold-out luxury tiers.
+        </p>
+        <div class="quote-box">
+          "Flavor profile mastery belongs to those who dare redefine palate expectations."
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Manufacturing Pioneer • India's 1st</div>
+        <h3>Vaniitha Jaiin</h3>
+        <div class="role-title">Revelry Distillery &amp; Vanaha Gin</div>
+        <p>
+          Recognized as India's first woman to own and construct a full-scale alco-bev distillery. Her visionary journey shifted the paradigm from marketing into industrial fermentation, grain-to-glass science, and heavy infrastructure.
+        </p>
+        <div class="quote-box">
+          "Pioneered the transition from consumer-side marketing to hard-core factory distillation."
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-label">Craft Gin Movement • Global Distillati
